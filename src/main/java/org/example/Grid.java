@@ -10,4 +10,11 @@ public class Grid {
     this.ySize = 10;
   }
 
+  public Position getNextPosition(Position position) {
+
+  }
+
+  private Integer getNextX(Integer currentX) {
+    
+  }
 }

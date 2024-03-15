@@ -15,4 +15,21 @@ public class PepeRobot implements MarsRover {
   public String execute(String command) {
     return this.position.toString();
   }
+
+  private void move() {
+    switch (this.position.getCurrentDirection()) {
+        case N -> {
+
+        }
+        case E -> {
+
+        }
+        case S -> {
+
+        }
+        case W -> {
+
+        }
+    }
+  }
 }

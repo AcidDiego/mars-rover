@@ -11,4 +11,28 @@ class PepeRobotTest {
     PepeRobot pepe = new PepeRobot(new Grid());
     assertEquals("0:0:N", pepe.execute(""));
   }
+
+  @Test
+  void shouldMoveTo23W() {
+    PepeRobot pepe = new PepeRobot(new Grid());
+    assertEquals("2:3:W", pepe.execute("MMRMMMLL"));
+  }
+
+  @Test
+  void shouldMoveOnX() {
+    PepeRobot pepe = new PepeRobot(new Grid());
+
+    String result = pepe.execute("M");
+
+    assertEquals("1:0:N", result);
+  }
+
+  @Test
+  void shouldMoveOnY() {}
+
+  @Test
+  void shouldNotOverflowOnX() {}
+
+  @Test
+  void shouldNotOverflowOnY() {}
 }

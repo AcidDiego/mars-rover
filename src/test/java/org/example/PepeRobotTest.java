@@ -13,6 +13,18 @@ class PepeRobotTest {
   }
 
   @Test
+  void shouldRotateOnce() {
+    PepeRobot pepe = new PepeRobot(new Grid());
+    assertEquals("0:0:W", pepe.execute("L"));
+  }
+
+  @Test
+  void shouldRotateOnceToRight() {
+    PepeRobot pepe = new PepeRobot(new Grid());
+    assertEquals("0:0:E", pepe.execute("R"));
+  }
+
+  @Test
   void shouldMoveTo23W() {
     PepeRobot pepe = new PepeRobot(new Grid());
     assertEquals("2:3:W", pepe.execute("MMRMMMLL"));

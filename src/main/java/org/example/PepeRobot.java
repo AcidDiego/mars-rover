@@ -13,7 +13,22 @@ public class PepeRobot implements MarsRover {
 
   @Override
   public String execute(String command) {
-    return this.position.toString();
+      command.chars().forEach(c -> {
+          String commandString = Character.toString((char) c);
+          if (commandString.equals("L")) {
+              this.position.rotateLeft();
+          }
+
+          if (commandString.equals("R")) {
+              this.position.rotateRight();
+          }
+
+          if (commandString.equals("M")) {
+              this.move();
+          }
+      });
+
+      return this.position.toString();
   }
 
   private void move() {

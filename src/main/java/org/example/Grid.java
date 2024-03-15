@@ -15,6 +15,6 @@ public class Grid {
   }
 
   private Integer getNextX(Integer currentX) {
-    
+
   }
 }
